@@ -1,21 +1,23 @@
 // ========================================================
 // Level 1 Challenges
 // ========================================================
-
 const sayHello = () => {
   return "Hello"
 }
 
 const area = (w, h) => {
   // should return the area
+  return w * h
 }
 
 const perimeter = (w, h) => {
   // should return the perimeter
+  return (w + h) * 2;
 }
 
 const circleArea = r => {
   // should return the area of the circle
+  return Math.PI * Math.pow(r, 2)
 }
 
 // ========================================================
@@ -37,18 +39,22 @@ const createItem = (name, price) => {
 
 const getShoppingCart = () => {
   // should return the current state of shopping cart
+  return shoppingCart;
 }
 
 const addItemToCart = (item) => {
   // should add item to shopping cart
+  shoppingCart.push(item);
 }
 
 const getNumItemsInCart = () => {
   // should return the total quantity of items in cart
+  return shoppingCart.length
 }
 
 const removeItemFromCart = (item) => {
   // should remove item from shopping cart
+  shoppingCart.pop(item);
 }
 
 module.exports = {
